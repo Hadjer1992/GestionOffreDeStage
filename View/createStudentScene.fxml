@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.CreationEtudiantControler">
+   <children>
+      <Label layoutX="166.0" layoutY="28.0" text="Création Etudiant" textFill="#4814cd">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Nom" layoutX="165.0" layoutY="65.0" prefHeight="25.0" prefWidth="208.0" promptText="votre nom" />
+      <TextField fx:id="prenom" layoutX="167.0" layoutY="111.0" prefHeight="25.0" prefWidth="200.0" promptText="votre prenom" />
+      <TextField fx:id="fill" layoutX="172.0" layoutY="280.0" prefHeight="25.0" prefWidth="208.0" promptText="filaire" />
+      <TextField fx:id="lvl" layoutX="175.0" layoutY="322.0" prefHeight="25.0" prefWidth="200.0" promptText="votre niveau" />
+      <Button fx:id="btnajouter" layoutX="33.0" layoutY="399.0" mnemonicParsing="false" onAction="#ajout" prefHeight="25.0" prefWidth="103.0" text="Ajouter" />
+      <Button fx:id="btnannuler" layoutX="428.0" layoutY="399.0" mnemonicParsing="false" onAction="#annuler" prefHeight="25.0" prefWidth="109.0" text="Annuler" />
+      <Label layoutX="33.0" layoutY="69.0" text="Nom :" />
+      <Label layoutX="36.0" layoutY="115.0" text="Prenom :" />
+      <Label layoutX="41.0" layoutY="284.0" text="Filaire :" />
+      <Label layoutX="43.0" layoutY="326.0" text="Niveau D'etude" />
+      <ImageView fitHeight="254.0" fitWidth="136.0" layoutX="415.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/Images/students.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="36.0" layoutY="156.0" text="Mot de pass :" />
+      <TextField fx:id="tel" layoutX="169.0" layoutY="194.0" prefHeight="25.0" prefWidth="200.0" promptText="telphone" />
+      <TextField fx:id="mail" layoutX="169.0" layoutY="237.0" prefHeight="25.0" prefWidth="200.0" promptText="Mail@aaaa.fr" />
+      <Label layoutX="36.0" layoutY="198.0" text="Télephone :" />
+      <Label layoutX="36.0" layoutY="241.0" text="Mail" />
+      <PasswordField fx:id="pass" layoutX="167.0" layoutY="152.0" prefHeight="25.0" prefWidth="200.0" promptText="mot de pass" />
+   </children>
+</AnchorPane>

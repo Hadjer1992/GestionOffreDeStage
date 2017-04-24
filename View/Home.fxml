@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controler.accueilControler">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="289.0" prefWidth="691.0">
+         <children>
+            <Button fx:id="btnajouter1" layoutX="21.0" layoutY="60.0" mnemonicParsing="false" onAction="#addStudent" text="Créer Etudiant" />
+            <Button fx:id="btnajouter2" layoutX="186.0" layoutY="60.0" mnemonicParsing="false" onAction="#addCompany" text="Créer Entreprise" />
+            <Button fx:id="btnajouter3" layoutX="322.0" layoutY="60.0" mnemonicParsing="false" onAction="#addOffre" text="Saisir un offre" />
+            <Button fx:id="btnajouter4" layoutX="482.0" layoutY="60.0" mnemonicParsing="false" onAction="#showOffre" text="Consulter les offres" />
+            <Button fx:id="btnannuler" layoutX="236.0" layoutY="182.0" mnemonicParsing="false" onAction="#annuler" prefHeight="25.0" prefWidth="174.0" text="Annuler" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
